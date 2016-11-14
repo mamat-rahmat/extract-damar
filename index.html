@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="https://openlayers.org/en/v3.19.1/css/ol.css" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css" type="text/css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+    <script src="https://openlayers.org/en/v3.19.1/build/ol.js" type="text/javascript"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js" type="text/javascript"></script>
+    <title>Damar Island</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center">Peta Pulau Damar</h1>
+      </div>
+      <div class="row">
+        <div class="col-lg-8">
+          <div id="map" class="map"></div>
+        </div>
+        <div class="col-lg-4">
+          <div class="row">
+            <div class="col-xs-6">
+              <table class="table table-bordered">
+                <tr>
+                  <td style="background-color:#6C4C00">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td>Tidak Kritis</td>
+                </tr>
+                <tr>
+                  <td style="background-color:#D19A6F">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td>Agak Kritis</td>
+                </tr>
+                <tr>
+                  <td style="background-color:#FED699">&nbsp;&nbsp;&nbsp;&nbsp;</td>
+                  <td>Kritis</td>
+                </tr>
+              </table>
+            </div>
+            <div class="col-xs-6">
+              <h4>Checkbox</h4>
+              <p>TODO : create checkbox to toggle layer visibility</p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-lg-12">
+              <div class="well">
+                <p>Berikut ini adalah open data yang divisualisasikan dalam peta menggunakan <a href="http://openlayers.org/">OpenLayers</a> :</p>
+                <ol>
+                  <li>Data garis batas pantai Pulau Damar diambil dari <a href="https://www.openstreetmap.org/">OpenStreetmap</a> menggunakan <a href="http://overpass-api.de/">Overpass API</a>. Lisensi dari data ini adalah <a href="http://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database License (ODbL)</a>.</li>
+                  <li>Data posisi gunung di Pulau Damar diambil dari <a href="https://www.openstreetmap.org/">OpenStreetmap</a> menggunakan <a href="http://overpass-api.de/">Overpass API</a>. Lisensi dari data ini adalah <a href="http://opendatacommons.org/licenses/odbl/">Open Data Commons Open Database License (ODbL)</a>.</li>
+                  <li>Data lahan kritis di Pulau Damar diambil dari <a href="http://appgis.dephut.go.id/appgis/download.aspx">Kementrian Kehutanan</a>. Lisensi dari data ini adalah <a href="http://www.opendefinition.org/licenses/cc-by">Creative Commons Attribution Lisence (cc-by)</a> yang mana disebutkan di <a href="http://data.go.id/dataset/data-lahan-kritis-di-maluku/resource/55ff4f8e-2db6-470e-80bd-d3a4e3d5b9e9">data.go.id</a>.</li>
+                </ol>
+                <p>Untuk lebih jelasnya, lihat <a href="https://github.com/BesutKode/uni-task-2-mamat-rahmat">repositori proyek</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br>
+    </div>
+    <script src="ol-style.js" type="text/javascript"></script>
+    <script src="ol-main.js" type="text/javascript"></script>
+  </body>
+</html>
